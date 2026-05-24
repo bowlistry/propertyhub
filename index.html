@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bowlistry — Premium PG Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="cur"></div>
+  <div id="curR"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo" onclick="showPage('home')">
+      <div class="logo-d">
+        <div class="logo-di"></div>
+      </div>
+      <div class="logo-t">Bowlistry</div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+      <li><a href="#" onclick="showPage('rooms')" id="nav-rooms">Rooms</a></li>
+      <li><a href="#" onclick="showPage('locations')" id="nav-locations">Locations</a></li>
+      <li><a href="#" onclick="showPage('amenities')" id="nav-amenities">Amenities</a></li>
+      <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
+      <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="showPage('contact')">Book a Tour</button>
+  </nav>
+
+  <!-- ═══════════════════ PAGE: HOME ═══════════════════ -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="grid-bg"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <div class="hero-eyebrow-text">Premium Managed PG · Top Companies Only</div>
+        </div>
+        <h1 class="hero-h1">Where Elites<br><em>Call Home.</em></h1>
+        <p class="hero-p">Curated, fully-furnished residences for professionals at India's top companies. Every detail designed for those who demand the best.</p>
+        <div class="hero-btns">
+          <button class="btn-gold" onclick="showPage('rooms')">Explore Rooms</button>
+          <button class="btn-outline" onclick="showPage('contact')">Schedule a Visit</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-n">200<span style="font-size:22px">+</span></div>
+            <div class="stat-l">Premium Rooms</div>
+          </div>
+          <div>
+            <div class="stat-n">12</div>
+            <div class="stat-l">Prime Locations</div>
+          </div>
+          <div>
+            <div class="stat-n">5★</div>
+            <div class="stat-l">Rated Service</div>
+          </div>
+          <div>
+            <div class="stat-n">4</div>
+            <div class="stat-l">Cities</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-vis-inner">
+          <div style="width:100%;height:100%;background:linear-gradient(145deg,#1a1a13,#0f0f0c);">
+            <svg width="100%" height="100%" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="700" fill="#111109" />
+              <rect x="0" y="590" width="600" height="110" fill="#141410" />
+              <rect x="0" y="588" width="600" height="2" fill="#2a2a1e" />
+              <rect x="40" y="40" width="200" height="520" fill="none" stroke="#1c1c14" stroke-width="1" />
+              <rect x="360" y="40" width="200" height="520" fill="none" stroke="#1c1c14" stroke-width="1" />
+              <rect x="180" y="55" width="240" height="330" fill="#0d1520" />
+              <radialGradient id="hg">
+                <stop offset="0%" stop-color="#8ab0d0" stop-opacity=".16" />
+                <stop offset="100%" stop-opacity="0" />
+              </radialGradient>
+              <rect x="180" y="55" width="240" height="330" fill="url(#hg)" />
+              <line x1="300" y1="55" x2="300" y2="385" stroke="#1e2a3a" stroke-width="1" />
+              <line x1="180" y1="220" x2="420" y2="220" stroke="#1e2a3a" stroke-width="1" />
+              <rect x="180" y="55" width="240" height="330" fill="none" stroke="#2a2a22" stroke-width="1.5" />
+              <path d="M180 55 Q162 220 170 385" fill="none" stroke="#222218" stroke-width="20" stroke-linecap="round" />
+              <path d="M420 55 Q438 220 430 385" fill="none" stroke="#222218" stroke-width="20" stroke-linecap="round" />
+              <rect x="70" y="450" width="270" height="140" rx="2" fill="#1a1a12" />
+              <rect x="70" y="450" width="270" height="22" fill="#222218" />
+              <rect x="74" y="454" width="262" height="14" fill="#1e1e15" />
+              <rect x="90" y="478" width="82" height="52" rx="4" fill="#242418" />
+              <rect x="196" y="478" width="82" height="52" rx="4" fill="#202016" />
+              <rect x="74" y="522" width="262" height="62" rx="2" fill="#1c1c14" />
+              <rect x="74" y="522" width="262" height="9" fill="#202018" />
+              <rect x="22" y="478" width="52" height="82" fill="#181812" />
+              <line x1="48" y1="478" x2="48" y2="418" stroke="#2a2a22" stroke-width="2" />
+              <ellipse cx="48" cy="406" rx="24" ry="14" fill="#1a1a12" stroke="#2a2a20" stroke-width="1" />
+              <ellipse cx="48" cy="411" rx="16" ry="8" fill="#c8af7820" />
+              <rect x="390" y="450" width="165" height="10" fill="#1a1a12" />
+              <rect x="390" y="460" width="4" height="130" fill="#161610" />
+              <rect x="551" y="460" width="4" height="130" fill="#161610" />
+              <rect x="416" y="382" width="104" height="68" rx="2" fill="#0d0d0c" stroke="#2a2a22" stroke-width="1" />
+              <rect x="420" y="386" width="96" height="60" fill="#0f1520" />
+              <line x1="468" y1="450" x2="468" y2="462" stroke="#2a2a22" stroke-width="2" />
+              <rect x="444" y="462" width="48" height="4" fill="#1a1a12" />
+              <rect x="400" y="498" width="74" height="52" rx="3" fill="#181812" />
+              <rect x="400" y="496" width="74" height="12" rx="2" fill="#1e1e16" />
+              <circle cx="100" cy="150" r="1.5" fill="#c8af7830">
+                <animate attributeName="cy" values="150;132;150" dur="4s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values=".3;.8;.3" dur="4s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="480" cy="190" r="1" fill="#c8af7838">
+                <animate attributeName="cy" values="190;172;190" dur="5s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values=".2;.7;.2" dur="5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="310" cy="95" r="1.2" fill="#c8af7832">
+                <animate attributeName="cy" values="95;78;95" dur="3.5s" repeatCount="indefinite" />
+              </circle>
+              <line x1="0" y1="586" x2="600" y2="586" stroke="#c8af7838" stroke-width="1" />
+            </svg>
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="hero-tag">
+            <div class="hero-tag-l">Starting from</div>
+            <div class="hero-tag-v">₹38,000 / month</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Featured Rooms -->
+    <section class="section">
+      <div class="reveal">
+        <div class="eyebrow">Curated For You</div>
+        <div class="sec-title">Featured <em>Rooms</em></div>
+      </div>
+      <div style="height:36px"></div>
+      <div class="rooms-grid reveal" id="home-rooms-grid">
+        <!-- 3 featured cards injected by JS -->
+      </div>
+      <div style="text-align:center;margin-top:32px;" class="reveal">
+        <button class="btn-outline" onclick="showPage('rooms')">View All Rooms →</button>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Why Us -->
+    <section class="section">
+      <div class="reveal">
+        <div class="eyebrow">Why Bowlistry</div>
+        <div class="sec-title">Built For <em>Professionals</em></div>
+      </div>
+      <div class="amen-big-grid feature-grid reveal" style="margin-top:40px;">
+        <div class="ab">
+          <div class="ab-icon">🏅</div>
+          <div class="ab-title">Exclusive Entry</div>
+          <div class="ab-desc">Only employees of verified top-tier companies are admitted. A community of ambitious professionals.</div>
+          <div class="ab-tag">ID verified</div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon">🛋</div>
+          <div class="ab-title">Move-in Ready</div>
+          <div class="ab-desc">Every room is fully furnished with premium furniture, linens, and all utilities included. Zero setup needed.</div>
+          <div class="ab-tag">Day-1 ready</div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon">🎯</div>
+          <div class="ab-title">All-Inclusive</div>
+          <div class="ab-desc">Meals, WiFi, housekeeping, gym, laundry — everything bundled at one transparent price. No hidden costs.</div>
+          <div class="ab-tag">Zero surprises</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="reveal">
+        <div class="eyebrow">Resident Stories</div>
+        <div class="sec-title">Trusted by <em>Professionals</em></div>
+      </div>
+      <div class="testi-grid reveal" style="margin-top:40px;">
+        <div class="tc">
+          <div class="tc-q">"</div>
+          <div class="tc-text">Moved in after joining McKinsey Bangalore. The quality of the room, the food — everything is top-tier. Feels like a boutique hotel I actually live in.</div>
+          <div class="tc-auth">
+            <div class="tc-av">AR</div>
+            <div>
+              <div class="tc-name">Arjun Rao</div>
+              <div class="tc-co">McKinsey & Company · Bangalore</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="tc-q">"</div>
+          <div class="tc-text">As a Goldman analyst in Mumbai, I needed something that matched my pace of life. Bowlistry delivered — from the 1Gbps WiFi to the chef who remembers my preferences.</div>
+          <div class="tc-auth">
+            <div class="tc-av">PS</div>
+            <div>
+              <div class="tc-name">Priya Sharma</div>
+              <div class="tc-co">Goldman Sachs · Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="tc-q">"</div>
+          <div class="tc-text">Best decision when relocating to Gurugram. The co-working lounge alone saved me ₹8,000/month in café bills. Premium in every sense.</div>
+          <div class="tc-auth">
+            <div class="tc-av">KM</div>
+            <div>
+              <div class="tc-name">Karan Mehta</div>
+              <div class="tc-co">Google India · Gurugram</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <div style="height:20px"></div>
+    <div class="cta-band reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Ready to Move In?</div>
+        <div class="cta-band-title">Book Your<br><em>Private Tour</em> Today.</div>
+      </div>
+      <div class="cta-band-btns">
+        <button class="btn-gold" onclick="showPage('contact')">Schedule Visit</button>
+        <button class="btn-outline" onclick="showPage('contact')">Call Us Now</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="home-footer"></div>
+  </div>
+
+  <!-- ═══════════════════ PAGE: ROOMS ═══════════════════ -->
+  <div class="page" id="page-rooms">
+    <section class="locs-hero">
+      <div class="grid-bg"></div>
+      <div style="position:relative;z-index:1">
+        <div class="eyebrow">Browse All Properties</div>
+        <div class="sec-title">Find Your <em>Perfect</em> Room</div>
+        <p style="margin-top:14px;font-size:13px;color:var(--ts);max-width:480px;line-height:1.8;">Handpicked, fully-furnished rooms across Mumbai, Bangalore, Delhi NCR, Hyderabad, and Pune — exclusively for professionals at leading companies.</p>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="filter-bar">
+        <div class="fg">
+          <div class="fl">Location</div>
+          <select class="fs" id="r-loc" onchange="filterRooms()">
+            <option value="">All Locations</option>
+            <option value="bandra">Bandra, Mumbai</option>
+            <option value="andheri">Andheri, Mumbai</option>
+            <option value="powai">Powai, Mumbai</option>
+            <option value="koramangala">Koramangala, BLR</option>
+            <option value="hsr">HSR Layout, BLR</option>
+            <option value="whitefield">Whitefield, BLR</option>
+            <option value="gurgaon">Gurugram, NCR</option>
+            <option value="noida">Noida, NCR</option>
+            <option value="hyderabad">Hitech City, HYD</option>
+            <option value="pune">Kothrud, Pune</option>
+          </select><span class="fa">▾</span>
+        </div>
+        <div class="fg">
+          <div class="fl">Room Type</div>
+          <select class="fs" id="r-type" onchange="filterRooms()">
+            <option value="">All Types</option>
+            <option value="single">Single Occupancy</option>
+            <option value="double">Double Sharing</option>
+            <option value="studio">Studio Suite</option>
+            <option value="deluxe">Deluxe Room</option>
+          </select><span class="fa">▾</span>
+        </div>
+        <div class="fg">
+          <div class="fl">Budget / Month</div>
+          <select class="fs" id="r-budget" onchange="filterRooms()">
+            <option value="">Any Budget</option>
+            <option value="15">Under ₹15K</option>
+            <option value="25">₹15K–₹25K</option>
+            <option value="35">₹25K–₹35K</option>
+            <option value="50">₹35K+</option>
+          </select><span class="fa">▾</span>
+        </div>
+        <div class="fg">
+          <div class="fl">Availability</div>
+          <select class="fs" id="r-avail" onchange="filterRooms()">
+            <option value="">Any</option>
+            <option value="now">Available Now</option>
+            <option value="soon">Available Soon</option>
+          </select><span class="fa">▾</span>
+        </div>
+        <div class="fg">
+          <div class="fl">Furnishing</div>
+          <select class="fs" id="r-furn" onchange="filterRooms()">
+            <option value="">All</option>
+            <option value="premium">Premium</option>
+            <option value="elite">Elite</option>
+          </select><span class="fa">▾</span>
+        </div>
+        <button class="filter-btn" onclick="filterRooms()">Search</button>
+      </div>
+      <div class="qtags">
+        <button class="qt on" onclick="qf(this,'')">All</button>
+        <button class="qt" onclick="qf(this,'mumbai')">Mumbai</button>
+        <button class="qt" onclick="qf(this,'bangalore')">Bangalore</button>
+        <button class="qt" onclick="qf(this,'delhi')">Delhi NCR</button>
+        <button class="qt" onclick="qf(this,'hyderabad')">Hyderabad</button>
+        <button class="qt" onclick="qf(this,'pune')">Pune</button>
+        <button class="qt" onclick="qf(this,'now')">Available Now</button>
+        <button class="qt" onclick="qf(this,'elite')">Elite Tier</button>
+      </div>
+      <div class="sort-header">
+        <div id="r-count" class="r-count-text">Showing 9 properties</div>
+        <select class="fs" class="sort-select" onchange="sortRooms(this.value)">
+          <option value="">Sort: Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+      <div class="rooms-grid" id="rooms-grid">
+        <!-- populated by JS -->
+      </div>
+      <div class="no-res" id="rooms-no-res">No properties match your filters.</div>
+    </section>
+    <div id="rooms-footer"></div>
+  </div>
+
+  <!-- ═══════════════════ PAGE: LOCATIONS ═══════════════════ -->
+  <div class="page" id="page-locations">
+    <section class="locs-hero">
+      <div class="grid-bg"></div>
+      <div style="position:relative;z-index:1">
+        <div class="eyebrow">Our Presence</div>
+        <div class="sec-title">12 Prime <em>Locations</em><br>Across 4 Cities</div>
+        <p style="margin-top:14px;font-size:13px;color:var(--ts);max-width:500px;line-height:1.8;">Strategically situated near India's top corporate hubs — from BKC Mumbai to Cyber City Gurugram — so your commute is never a compromise.</p>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <div class="map-area">
+      <svg width="100%" height="100%" viewBox="0 0 960 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <rect width="960" height="360" fill="#111109" />
+        <path d="M400 40 L480 30 L560 50 L610 90 L640 140 L650 200 L620 260 L570 300 L520 330 L480 340 L440 320 L400 280 L370 230 L360 170 L370 110 Z" fill="none" stroke="#2a2a22" stroke-width="1.5" />
+        
+        <g class="pin" style="left:0;top:0">
+          <circle cx="390" cy="210" r="5" fill="#c8af78" opacity=".9" />
+          <circle cx="390" cy="210" r="10" fill="none" stroke="#c8af78" stroke-width="1" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="2.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values=".5;0;.5" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+          <text x="404" y="214" font-size="10" fill="#c8af78" font-family="DM Sans,sans-serif" letter-spacing="1">MUMBAI</text>
+        </g>
+        <g>
+          <circle cx="450" cy="255" r="5" fill="#c8af78" opacity=".9" />
+          <circle cx="450" cy="255" r="10" fill="none" stroke="#c8af78" stroke-width="1" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values=".5;0;.5" dur="3s" repeatCount="indefinite" />
+          </circle>
+          <text x="464" y="259" font-size="10" fill="#c8af78" font-family="DM Sans,sans-serif" letter-spacing="1">BANGALORE</text>
+        </g>
+        <g>
+          <circle cx="440" cy="130" r="5" fill="#c8af78" opacity=".9" />
+          <circle cx="440" cy="130" r="10" fill="none" stroke="#c8af78" stroke-width="1" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values=".5;0;.5" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <text x="454" y="134" font-size="10" fill="#c8af78" font-family="DM Sans,sans-serif" letter-spacing="1">DELHI NCR</text>
+        </g>
+        <g>
+          <circle cx="470" cy="210" r="5" fill="#c8af78" opacity=".9" />
+          <circle cx="470" cy="210" r="10" fill="none" stroke="#c8af78" stroke-width="1" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="3.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values=".5;0;.5" dur="3.5s" repeatCount="indefinite" />
+          </circle>
+          <text x="484" y="214" font-size="10" fill="#c8af78" font-family="DM Sans,sans-serif" letter-spacing="1">HYDERABAD</text>
+        </g>
+        <g>
+          <circle cx="415" cy="225" r="5" fill="#c8af78" opacity=".9" />
+          <circle cx="415" cy="225" r="10" fill="none" stroke="#c8af78" stroke-width="1" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="2.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values=".5;0;.5" dur="2.8s" repeatCount="indefinite" />
+          </circle>
+          <text x="367" y="229" font-size="10" fill="#c8af78" font-family="DM Sans,sans-serif" letter-spacing="1">PUNE</text>
+        </g>
+        
+        <line x1="390" y1="210" x2="440" y2="130" stroke="#c8af7818" stroke-width="1" stroke-dasharray="4,4" />
+        <line x1="390" y1="210" x2="415" y2="225" stroke="#c8af7818" stroke-width="1" stroke-dasharray="4,4" />
+        <line x1="450" y1="255" x2="470" y2="210" stroke="#c8af7818" stroke-width="1" stroke-dasharray="4,4" />
+        <line x1="415" y1="225" x2="450" y2="255" stroke="#c8af7818" stroke-width="1" stroke-dasharray="4,4" />
+        
+        <text x="200" y="180" font-size="48" fill="#ffffff08" font-family="Cormorant Garamond,serif" font-style="italic">India</text>
+      </svg>
+      <div class="map-label-tag">5 Cities · 12 Locations</div>
+    </div>
+
+    <!-- Location Cards -->
+    <div class="locs-grid">
+      <div class="loc-card">
+        <div class="loc-img">
+          <div class="loc-img-inner ri1">
+             <svg width="100%" height="100%" viewBox="0 0 360 200"><rect width="360" height="200" fill="#1c1c15" /><rect x="0" y="165" width="360" height="35" fill="#141410" /><rect x="60" y="10" width="240" height="150" fill="#0d1520" /><radialGradient id="lg1"><stop offset="0%" stop-color="#7aa8d0" stop-opacity=".2" /><stop offset="100%" stop-opacity="0" /></radialGradient><rect x="60" y="10" width="240" height="150" fill="url(#lg1)" /><line x1="180" y1="10" x2="180" y2="160" stroke="#1e2a3a" stroke-width="1" /><line x1="60" y1="85" x2="300" y2="85" stroke="#1e2a3a" stroke-width="1" /><rect x="60" y="10" width="240" height="150" fill="none" stroke="#2a2a22" stroke-width="1.5" /></svg>
+          </div>
+        </div>
+        <div class="loc-city-tag"><div class="loc-city-name">Mumbai</div></div>
+        <div class="loc-body">
+          <div class="loc-name">Bandra West</div>
+          <div class="loc-desc">Prime location near BKC, home to Goldman Sachs, JP Morgan and McKinsey offices.</div>
+          <div class="loc-meta">
+            <div class="loc-meta-item">Rooms<span>34</span></div>
+            <div class="loc-meta-item">From<span>₹24K</span></div>
+            <div class="loc-meta-item">Rating<span>4.9★</span></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="loc-card">
+        <div class="loc-img">
+          <div class="loc-img-inner ri2">
+             <svg width="100%" height="100%" viewBox="0 0 360 200"><rect width="360" height="200" fill="#111118" /><rect x="0" y="165" width="360" height="35" fill="#0d0d14" /><rect x="40" y="8" width="280" height="155" fill="#0a0f1a" /><radialGradient id="lg2"><stop offset="0%" stop-color="#6080b0" stop-opacity=".18" /><stop offset="100%" stop-opacity="0" /></radialGradient><rect x="40" y="8" width="280" height="155" fill="url(#lg2)" /><line x1="180" y1="8" x2="180" y2="163" stroke="#151c28" stroke-width="1" /><line x1="40" y1="85" x2="320" y2="85" stroke="#151c28" stroke-width="1" /><rect x="40" y="8" width="280" height="155" fill="none" stroke="#232330" stroke-width="1.5" /></svg>
+          </div>
+        </div>
+        <div class="loc-city-tag"><div class="loc-city-name">Bangalore</div></div>
+        <div class="loc-body">
+          <div class="loc-name">Koramangala</div>
+          <div class="loc-desc">5th Block, 6th Block — the epicentre of Bangalore's startup and MNC ecosystem.</div>
+          <div class="loc-meta">
+            <div class="loc-meta-item">Rooms<span>48</span></div>
+            <div class="loc-meta-item">From<span>₹18K</span></div>
+            <div class="loc-meta-item">Rating<span>4.8★</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loc-card">
+        <div class="loc-img">
+          <div class="loc-img-inner ri3">
+            <svg width="100%" height="100%" viewBox="0 0 360 200"><rect width="360" height="200" fill="#151510" /><rect x="0" y="165" width="360" height="35" fill="#111110" /><rect x="70" y="10" width="220" height="150" fill="#0e1010" /><radialGradient id="lg3"><stop offset="0%" stop-color="#c0b080" stop-opacity=".1" /><stop offset="100%" stop-opacity="0" /></radialGradient><rect x="70" y="10" width="220" height="150" fill="url(#lg3)" /><line x1="180" y1="10" x2="180" y2="160" stroke="#222218" stroke-width="1" /><line x1="70" y1="85" x2="290" y2="85" stroke="#222218" stroke-width="1" /><rect x="70" y="10" width="220" height="150" fill="none" stroke="#2a2a20" stroke-width="1.5" /></svg>
+          </div>
+        </div>
+        <div class="loc-city-tag"><div class="loc-city-name">Delhi NCR</div></div>
+        <div class="loc-body">
+          <div class="loc-name">Gurugram Sector 29</div>
+          <div class="loc-desc">Walking distance to Cyber City and Golf Course Road — Delhi's corporate heartland.</div>
+          <div class="loc-meta">
+            <div class="loc-meta-item">Rooms<span>40</span></div>
+            <div class="loc-meta-item">From<span>₹20K</span></div>
+            <div class="loc-meta-item">Rating<span>4.7★</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-band reveal" style="margin:0 60px 80px">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Not Sure Which Location?</div>
+        <div class="cta-band-title">Talk to Our<br><em>Location Advisor.</em></div>
+      </div>
+      <div class="cta-band-btns">
+        <button class="btn-gold" onclick="showPage('contact')">Get Advice</button>
+        <button class="btn-outline" onclick="showPage('rooms')">Browse Rooms</button>
+      </div>
+    </div>
+    <div id="locations-footer"></div>
+  </div>
+
+  <!-- ═══════════════════ PAGE: AMENITIES ═══════════════════ -->
+  <div class="page" id="page-amenities">
+    <section class="amen-hero">
+      <div class="grid-bg"></div>
+      <div style="position:relative;z-index:1">
+        <div class="eyebrow">Everything Included</div>
+        <div class="sec-title">Premium <em>Amenities</em><br>At Every Property</div>
+        <p style="margin-top:14px;font-size:13px;color:var(--ts);max-width:500px;line-height:1.8;">One flat monthly rent. Zero add-ons. Everything you need to live, work, eat, and recover — bundled into one world-class experience.</p>
+      </div>
+    </section>
+
+    <div class="amen-big-grid">
+      <div class="ab">
+        <div class="ab-icon">🛋</div>
+        <div class="ab-title">Luxury Furnished</div>
+        <div class="ab-desc">Queen beds, premium mattresses, ergonomic desks, bespoke wardrobes, blackout curtains in every room.</div>
+        <div class="ab-tag">All rooms</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">⚡</div>
+        <div class="ab-title">1 Gbps Fiber WiFi</div>
+        <div class="ab-desc">Symmetric gigabit internet per resident. Zero throttling. Separate SSID for work and personal devices.</div>
+        <div class="ab-tag">Zero downtime SLA</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">🍽</div>
+        <div class="ab-title">Gourmet Meals</div>
+        <div class="ab-desc">Three chef-curated meals daily — breakfast, lunch, dinner. Veg, non-veg, and diet options every day.</div>
+        <div class="ab-tag">3 meals · 7 days</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">🏋</div>
+        <div class="ab-title">Fitness & Wellness</div>
+        <div class="ab-desc">24/7 fully equipped gym, yoga studio, meditation room. On-site trainer on request. Pool at select locations.</div>
+        <div class="ab-tag">24/7 access</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">🧼</div>
+        <div class="ab-title">Daily Housekeeping</div>
+        <div class="ab-desc">Professional room cleaning daily. Fresh linen twice a week. Laundry and dry-cleaning service included.</div>
+        <div class="ab-tag">Included in rent</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">🔐</div>
+        <div class="ab-title">Smart Security</div>
+        <div class="ab-desc">Biometric entry, 24/7 CCTV, trained guards, visitor management. ID verification for all residents.</div>
+        <div class="ab-tag">ID verified</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">💻</div>
+        <div class="ab-title">Co-working Lounge</div>
+        <div class="ab-desc">Private co-working spaces with meeting rooms, high-speed pods, whiteboards, and printing facilities.</div>
+        <div class="ab-tag">All locations</div>
+      </div>
+      <div class="ab">
+        <div class="ab-icon">🎯</div>
+        <div class="ab-title">24/7 Concierge</div>
+        <div class="ab-desc">Dedicated property manager. Cab booking, courier handling, package receipt, guest management.</div>
+        <div class="ab-tag">Always on</div>
+      </div>
+    </div>
+
+    <!-- Compare Table -->
+    <section class="section">
+      <div class="eyebrow">Compare Plans</div>
+      <div class="sec-title" style="margin-bottom:32px">Which Tier <em>Suits You?</em></div>
+      <div class="table-responsive">
+        <div class="compare-table">
+          <div class="ct-head">
+            <div class="ct-cell">Amenity</div>
+            <div class="ct-cell">Standard</div>
+            <div class="ct-cell">Premium</div>
+            <div class="ct-cell">Elite</div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">Fully Furnished Room</div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">High-Speed WiFi</div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">3 Meals Daily</div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">Housekeeping (Daily)</div>
+            <div class="ct-cell"><span class="ct-x">Alt. days</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">Co-working Lounge</div>
+            <div class="ct-cell"><span class="ct-x">—</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">Chef-curated Meals</div>
+            <div class="ct-cell"><span class="ct-x">—</span></div>
+            <div class="ct-cell"><span class="ct-x">—</span></div>
+            <div class="ct-cell"><span class="ct-check">✓</span></div>
+          </div>
+          <div class="ct-row">
+            <div class="ct-cell">Starting Price</div>
+            <div class="ct-cell" style="color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:16px">₹30,000/mo</div>
+            <div class="ct-cell" style="color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:16px">₹35,000/mo</div>
+            <div class="ct-cell" style="color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:16px">₹40,000/mo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="amenities-footer"></div>
+  </div>
+
+  <!-- ═══════════════════ PAGE: ABOUT ═══════════════════ -->
+  <div class="page" id="page-about">
+    <section class="about-hero">
+      <div class="grid-bg"></div>
+      <div style="position:relative;z-index:1;max-width:700px;">
+        <div class="eyebrow">Our Story</div>
+        <div class="sec-title" style="font-size:clamp(44px,6vw,72px)">Redefining How<br>Professionals <em>Live.</em></div>
+        <p style="margin-top:20px;font-size:14px;color:var(--ts);line-height:1.9;max-width:540px;">Founded in 2019, Bowlistry was born from a simple frustration: India's best professionals deserved far better than the dingy PGs they were forced to live in. We set out to change that — one premium room at a time.</p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="about-grid">
+      <div class="about-block">
+        <div class="about-num">2019</div>
+        <div class="about-label">Year Founded</div>
+        <div class="about-text">Started with a single 20-room property in Koramangala, Bangalore. Grew to 200+ rooms in 4 cities in just 5 years.</div>
+      </div>
+      <div class="about-block">
+        <div class="about-num">200+</div>
+        <div class="about-label">Premium Rooms</div>
+        <div class="about-text">Across 12 locations in Mumbai, Bangalore, Delhi NCR, Hyderabad and Pune — with 8 more locations opening in 2026.</div>
+      </div>
+      <div class="about-block">
+        <div class="about-num">98%</div>
+        <div class="about-label">Occupancy Rate</div>
+        <div class="about-text">Consistently at or near full occupancy — a testament to the quality of our product and the community we've built.</div>
+      </div>
+      <div class="about-block">
+        <div class="about-num">4.9★</div>
+        <div class="about-label">Average Rating</div>
+        <div class="about-text">Rated across 800+ verified resident reviews. Consistently ranked #1 Premium PG brand across all locations.</div>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <section class="section" style="padding-top:0">
+      <div class="divider" style="margin:0 0 60px"></div>
+      <div class="mission-wrapper">
+        <div>
+          <div class="eyebrow">Our Mission</div>
+          <div class="sec-title" style="margin-bottom:20px">Living that <em>Matches</em><br>Your Ambition.</div>
+          <p style="font-size:13px;color:var(--ts);line-height:1.9;margin-bottom:16px;">We believe where you live shapes how you perform. A professional who comes home to a premium, quiet, well-fed environment is sharper, healthier, and more effective at work.</p>
+          <p style="font-size:13px;color:var(--ts);line-height:1.9;">Our goal is simple: make premium managed accommodation the default choice for India's top professionals — not a luxury, but a standard.</p>
+        </div>
+        <div class="mission-grid">
+          <div style="background:var(--d2);border:.5px solid var(--b);padding:24px;">
+            <div style="font-size:22px;margin-bottom:10px">🏙</div>
+            <div style="font-size:13px;color:var(--ts);line-height:1.6">Prime corporate-adjacent locations</div>
+          </div>
+          <div style="background:var(--d2);border:.5px solid var(--b);padding:24px;">
+            <div style="font-size:22px;margin-bottom:10px">🤝</div>
+            <div style="font-size:13px;color:var(--ts);line-height:1.6">A curated community of top professionals</div>
+          </div>
+          <div style="background:var(--d2);border:.5px solid var(--b);padding:24px;">
+            <div style="font-size:22px;margin-bottom:10px">💎</div>
+            <div style="font-size:13px;color:var(--ts);line-height:1.6">Uncompromising quality at every touchpoint</div>
+          </div>
+          <div style="background:var(--d2);border:.5px solid var(--b);padding:24px;">
+            <div style="font-size:22px;margin-bottom:10px">📈</div>
+            <div style="font-size:13px;color:var(--ts);line-height:1.6">Continuously raising the bar — 2 new cities in 2026</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" style="padding-top:0">
+      <div class="eyebrow">Our Journey</div>
+      <div class="sec-title" style="margin-bottom:40px">Built <em>Step by Step</em></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">2019</div>
+          <div class="tl-title">Founded in Bangalore</div>
+          <div class="tl-desc">Launched our first 20-room property in Koramangala. Full occupancy in 3 weeks.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2020</div>
+          <div class="tl-title">Expanded to Mumbai</div>
+          <div class="tl-desc">Opened two properties in Bandra and Andheri. Introduced the Elite tier.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2021</div>
+          <div class="tl-title">Series A · Delhi NCR Launch</div>
+          <div class="tl-desc">Raised ₹18Cr. Opened in Gurugram and Noida. Crossed 100 rooms.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2023</div>
+          <div class="tl-title">200 Rooms Milestone</div>
+          <div class="tl-desc">Crossed 200 premium rooms. Launched app for residents. 4.9★ average across all reviews.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" style="padding-top:0">
+      <div class="eyebrow">The Team</div>
+      <div class="sec-title" style="margin-bottom:36px">Meet the <em>Founders</em></div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">RV</div>
+          <div class="team-name">Rohan Verma</div>
+          <div class="team-role">Co-founder & CEO</div>
+          <div style="font-size:11px;color:var(--tm);margin-top:8px;line-height:1.6">Ex-McKinsey. IIT Delhi. Built the vision and operations from ground zero.</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AA</div>
+          <div class="team-name">Anika Agarwal</div>
+          <div class="team-role">Co-founder & COO</div>
+          <div style="font-size:11px;color:var(--tm);margin-top:8px;line-height:1.6">Ex-Goldman Sachs. IIM Ahmedabad. Runs all properties with zero-defect precision.</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">SK</div>
+          <div class="team-name">Siddharth Kumar</div>
+          <div class="team-role">CTO</div>
+          <div style="font-size:11px;color:var(--tm);margin-top:8px;line-height:1.6">Ex-Swiggy engineering. Builds our resident app and smart home infrastructure.</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">PM</div>
+          <div class="team-name">Preethi Menon</div>
+          <div class="team-role">Head of Design</div>
+          <div style="font-size:11px;color:var(--tm);margin-top:8px;line-height:1.6">Ex-Godrej Interiors. Designs every room, lounge, and common space we build.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band" style="margin:0 60px 80px">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Join Our Community</div>
+        <div class="cta-band-title">Book Your<br><em>Premium Room.</em></div>
+      </div>
+      <div class="cta-band-btns">
+        <button class="btn-gold" onclick="showPage('rooms')">Browse Rooms</button>
+        <button class="btn-outline" onclick="showPage('contact')">Talk to Us</button>
+      </div>
+    </div>
+    <div id="about-footer"></div>
+  </div>
+
+  <!-- ═══════════════════ PAGE: CONTACT ═══════════════════ -->
+  <div class="page" id="page-contact">
+    <section class="locs-hero">
+      <div class="grid-bg"></div>
+      <div style="position:relative;z-index:1">
+        <div class="eyebrow">Get In Touch</div>
+        <div class="sec-title">We'd Love to<br><em>Hear From You.</em></div>
+        <p style="margin-top:14px;font-size:13px;color:var(--ts);max-width:440px;line-height:1.8;">Schedule a tour, ask about availability, or just say hello. Our team responds within 2 hours during business hours.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (GRID) -->
+    <div class="contact-grid">
+      
+      <!-- 🡇 LEFT COLUMN: Form + Offices 🡇 -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        
+        <!-- Book a Tour Form -->
+        <div class="contact-form-wrap">
+          <div class="form-title">Book a Private Tour</div>
+          <div class="form-sub">Fill in your details and our location advisor will reach out within 2 hours to confirm your visit.</div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name <span style="color:var(--gold)">*</span></label>
+              <input id="firstName" class="form-input" placeholder="Arjun" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input id="lastName" class="form-input" placeholder="Rao" type="text" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Email <span style="color:var(--gold)">*</span></label>
+            <input id="email" class="form-input" placeholder="arjun@mckinsey.com" type="email" />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Phone Number <span style="color:var(--gold)">*</span></label>
+            <input id="phone" class="form-input" placeholder="+91 98765 43210" type="tel" />
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Company</label><input id="company" class="form-input" placeholder="McKinsey & Company" type="text" /></div>
+            <div class="form-group"><label class="form-label">Designation</label><input id="designation" class="form-input" placeholder="Associate" type="text" /></div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Preferred Location</label>
+              <select id="location" class="form-select">
+                <option>Any Location</option>
+                <option>Bandra, Mumbai</option>
+                <option>Andheri, Mumbai</option>
+                <option>Powai, Mumbai</option>
+                <option>Gurugram, NCR</option>
+                <option>Koramangala, BLR</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Move-in Timeline</label>
+              <select id="timeline" class="form-select">
+                <option>Immediately</option>
+                <option>Within 2 weeks</option>
+                <option>This Month</option>
+                <option>Next Month</option>
+                <option>Just Exploring</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Room Type Preference</label>
+            <select id="roomType" class="form-select">
+              <option>Any</option>
+              <option>Single Occupancy</option>
+              <option>Double Sharing</option>
+              <option>Studio Suite</option>
+              <option>Deluxe Room</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Anything Else?</label>
+            <textarea id="message" class="form-textarea" placeholder="Special requirements, questions about amenities, specific dates..."></textarea>
+          </div>
+          
+          <button class="form-submit" id="submitBtn" onclick="submitForm()">
+            <span id="btnText">Submit & Schedule Tour</span>
+            <span id="loader" style="display:none;align-items:center;justify-content:center;">
+              <span class="spinner"></span>Submitting...
+            </span>
+          </button>
+          
+          <!-- ERROR MESSAGE BOX -->
+          <div id="form-error" style="display:none;margin-top:16px;padding:14px 18px;background:rgba(215,60,60,.15);border:.5px solid rgba(215,60,60,.4);font-size:13px;color:#e86c6c;letter-spacing:.4px;border-radius:12px;">
+            ⚠ Please fill in the compulsory fields (First Name, Email, and Phone).
+          </div>
+          
+          <!-- SUCCESS MESSAGE BOX -->
+          <div id="form-success" style="display:none;margin-top:16px;padding:14px 18px;background:rgba(55,170,110,.15);border:.5px solid rgba(55,170,110,.4);font-size:13px;color:#4abf84;letter-spacing:.4px;border-radius:12px;">
+            ✓ Form submitted successfully! Our agent will contact you shortly.
+          </div>
+        </div>
+
+        <!-- Our Offices -->
+        <div style="background: var(--d2); border: .5px solid var(--b); padding: 44px 40px;">
+          <div class="eyebrow" style="padding:0">Our Offices</div>
+          <div class="sec-title" style="margin-bottom:28px; padding:0; font-size:32px;">Find Us <em>Near You</em></div>
+          
+          <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+            <div class="office-card" style="background: var(--d3); padding: 24px; border: .5px solid var(--b);">
+              <div class="office-city" style="font-size: 22px; font-family:'Cormorant Garamond',serif; color:var(--gold); margin-bottom:6px;">Mumbai</div>
+              <div class="office-addr" style="font-size:12px; color:var(--tm); line-height:1.7;">WeWork BKC, G Block,<br>Bandra Kurla Complex, Mumbai 400051</div>
+              <div class="office-ph" style="font-size:11px; color:var(--ts); margin-top:10px;">+91 98200 11111</div>
+            </div>
+            <div class="office-card" style="background: var(--d3); padding: 24px; border: .5px solid var(--b);">
+              <div class="office-city" style="font-size: 22px; font-family:'Cormorant Garamond',serif; color:var(--gold); margin-bottom:6px;">Bangalore</div>
+              <div class="office-addr" style="font-size:12px; color:var(--tm); line-height:1.7;">Awfis, 5th Block,<br>Koramangala, Bangalore 560034</div>
+              <div class="office-ph" style="font-size:11px; color:var(--ts); margin-top:10px;">+91 98200 22222</div>
+            </div>
+            <div class="office-card" style="background: var(--d3); padding: 24px; border: .5px solid var(--b);">
+              <div class="office-city" style="font-size: 22px; font-family:'Cormorant Garamond',serif; color:var(--gold); margin-bottom:6px;">Delhi NCR</div>
+              <div class="office-addr" style="font-size:12px; color:var(--tm); line-height:1.7;">Regus Cyber City,<br>DLF Phase 2, Sector 25, Gurugram 122002</div>
+              <div class="office-ph" style="font-size:11px; color:var(--ts); margin-top:10px;">+91 98200 33333</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 🡅 END LEFT COLUMN 🡅 -->
+
+      <!-- 🡇 RIGHT COLUMN: Contact Info 🡇 -->
+    <div class="contact-info">
+        <div>
+          <div class="ci-block-label">Call Us</div>
+          <div class="ci-value"><span class="ci-gold">+91 7208913229</span><br><span style="font-size:12px;color:var(--tm)">Mon – Sun, 9AM – 8PM IST</span></div>
+        </div>
+        <div class="ci-divider"></div>
+        <div>
+          <div class="ci-block-label">Email</div>
+          <div class="ci-value"><span class="ci-gold">bowlistry@gmail.com</span><br><span style="font-size:12px;color:var(--tm)">Replies within 2 hours</span></div>
+        </div>
+        <div class="ci-divider"></div>
+        <div>
+          <div class="ci-block-label">WhatsApp</div>
+          <div class="ci-value"><span class="ci-gold">+91 7208913229</span><br><span style="font-size:12px;color:var(--tm)">Chat with our team instantly</span></div>
+        </div>
+        <div class="ci-divider"></div>
+        <div>
+          <div class="ci-block-label">Corporate Enquiries</div>
+          <div class="ci-value"><span class="ci-gold">hello@bowlistry.com</span><br><span style="font-size:12px;color:var(--tm)">For bulk bookings & tie-ups</span></div>
+        </div>
+        <div class="ci-divider"></div>
+        
+        <!-- UPDATED SOCIAL LINKS -->
+        <div>
+          <div class="ci-block-label">Follow Us</div>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+            <a href="https://instagram.com" target="_blank" style="padding:12px 14px; border:.5px solid var(--b); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ts); text-decoration:none; text-align:center; transition:background 0.2s;" onmouseover="this.style.background='var(--d3)'" onmouseout="this.style.background='transparent'">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" style="padding:12px 14px; border:.5px solid var(--b); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ts); text-decoration:none; text-align:center; transition:background 0.2s;" onmouseover="this.style.background='var(--d3)'" onmouseout="this.style.background='transparent'">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" style="padding:12px 14px; border:.5px solid var(--b); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ts); text-decoration:none; text-align:center; transition:background 0.2s;" onmouseover="this.style.background='var(--d3)'" onmouseout="this.style.background='transparent'">Twitter</a>
+            <a href="https://youtube.com" target="_blank" style="padding:12px 14px; border:.5px solid var(--b); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ts); text-decoration:none; text-align:center; transition:background 0.2s;" onmouseover="this.style.background='var(--d3)'" onmouseout="this.style.background='transparent'">YouTube</a>
+          </div>
+        </div>
+        <div class="ci-divider"></div>
+
+        <!-- NEW MUSIC PLAYER -->
+        <div>
+          <div class="ci-block-label">Set the Mood</div>
+          <div style="margin-top:8px;">
+            <!-- Note: The filter makes the default HTML audio player blend into your dark theme! -->
+            <audio controls style="width: 100%; height: 40px; outline: none; filter: invert(0.9) hue-rotate(180deg) grayscale(1);">
+              <!-- Put your own MP3 link here -->
+              <source src="preloader.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <div class="ci-divider"></div>
+       
+        <!-- NEW QUOTE -->
+        <div style="text-align: center; padding-top: 10px;">
+          <p style="font-family:'Cormorant Garamond', serif; font-size:19px; font-style:italic; color:var(--gold); line-height:1.4;">"Where ambition meets comfort."</p>
+        </div>
+        <div class="ci-divider"></div>
+         <!-- VIDEO TOUR -->
+        <div style="margin-top: 20px;">
+          <div class="ci-block-label" style="margin-bottom: 12px;">Watch Property Tour</div>
+          <div style="position: relative; padding-bottom: 32%; height: 0; overflow: hidden; border: .5px solid var(--bs); border-radius: 4px;">
+            <iframe 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+              title="Property Hub Tour" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+<div class="ci-divider"></div>
+         <div style="background:var(--gold-dim);border:.5px solid var(--bs);padding:18px;">
+          <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Verified Entry Only</div>
+          <div style="font-size:12px;color:var(--ts);line-height:1.7">Bowlistry is exclusively for employees of top-tier companies. A valid ID or work email is required during onboarding.</div>
+        </div>
+
+      </div>
+     
+      <!-- 🡅 END RIGHT COLUMN 🡅 -->
+
+    </div>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="eyebrow">Common Questions</div>
+      <div class="sec-title" style="margin-bottom:36px">Frequently <em>Asked</em></div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Who can live at Bowlistry? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">
+            <div class="faq-a-text">Bowlistry is exclusively open to employees of verified top-tier companies — including MNCs, Big 4 firms, top Indian corporations, and leading startups. A valid company email or employee ID is required during onboarding.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What is included in the monthly rent? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">
+            <div class="faq-a-text">All plans include: fully furnished room, 3 meals/day, WiFi, housekeeping, gym access, electricity, water, and security. Premium and Elite plans include additional services like co-working, laundry, and personal concierge.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What is the minimum stay duration? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">
+            <div class="faq-a-text">Our minimum stay is 3 months, with monthly renewals thereafter. We also offer short-stay plans (2–4 weeks) for certain locations at a slightly higher rate.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Is there a security deposit? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">
+            <div class="faq-a-text">Yes, a refundable security deposit of 2 months' rent is collected at the time of move-in. It is returned in full within 7 business days of your move-out, subject to no damage.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contact-footer"></div>
+  </div>
+
+  <!-- FOOTER TEMPLATE (injected per page) -->
+  <template id="footer-tpl">
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="logo">
+            <div class="logo-d" style="width:22px;height:22px">
+              <div class="logo-di" style="width:8px;height:8px"></div>
+            </div>
+            <div class="logo-t" style="font-size:16px">Bowlistry</div>
+          </div>
+          <div class="footer-brand-p">Premium fully-furnished PG residences curated exclusively for professionals at India's top companies. Live elevated.</div>
+        </div>
+        <div>
+          <div class="fc-title">Locations</div>
+          <ul class="fc-links">
+            <li><a href="#" onclick="showPage('locations')">Mumbai</a></li>
+            <li><a href="#" onclick="showPage('locations')">Bangalore</a></li>
+            <li><a href="#" onclick="showPage('locations')">Delhi NCR</a></li>
+            <li><a href="#" onclick="showPage('locations')">Hyderabad</a></li>
+            <li><a href="#" onclick="showPage('locations')">Pune</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fc-title">Quick Links</div>
+          <ul class="fc-links">
+            <li><a href="#" onclick="showPage('rooms')">Browse Rooms</a></li>
+            <li><a href="#" onclick="showPage('amenities')">Amenities</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('contact')">Book a Tour</a></li>
+            <li><a href="#" onclick="showPage('contact')">For Companies</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fc-title">Contact</div>
+          <ul class="fc-links">
+            <li><a href="#">+91 7208913229</a></li>
+            <li><a href="#">bowlistry@gmail.com</a></li>
+            <li><a href="https://bowlistry.com/">www.bowlistry.com</a></li>
+            <li><a href="https://bowlistry.com/" style="margin-top:6px;display:inline-block">Instagram</a></li>
+            <li><a href="https://bowlistry.com/">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Bowlistry. All rights reserved.</div>
+        <div class="verified-badge">
+          <div class="vb-dot"></div>
+          <div class="vb-text">ID Verified · Premium Only</div>
+        </div>
+      </div>
+    </footer>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
